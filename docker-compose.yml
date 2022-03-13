@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  papermc:
+    build:
+      context: ./
+      dockerfile: ./papermc/Dockerfile
+    ports:
+      - "0.0.0.0:25567:25565"
+    volumes:
+      - "./data/logs:/papermc/logs"
+      - "./data/plugins:/papermc/plugins"
+      - "./data/worlds/Jao_Afa:/papermc/Jao_Afa"
+      - "./data/worlds/Jao_Afa_nether:/papermc/Jao_Afa_nether"
+  log-sender:
+    build: log-sender/
+    links:
+      - papermc
+    volumes:
+      - "./data/logs:/papermc/logs"

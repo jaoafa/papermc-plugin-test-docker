@@ -1,0 +1,11 @@
+data/*
+
+!data/.gitkeep
+!data/bukkit.yml
+!data/server.properties
+!data/ops.json
+
+!data/plugins/bStats/config.yml
+
+log-sender/config.json
+node_modules
