@@ -74,7 +74,9 @@ async function main() {
   console.log('Starting log-sender')
 
   const path = '/papermc/logs/latest.log'
-  readLogFile(path)
+  if (fs.existsSync(path)) {
+    readLogFile(path)
+  }
 
   fs.watchFile(path, (_curr, _prev) => {
     readLogFile(path)
