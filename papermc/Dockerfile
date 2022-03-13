@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM openjdk:19-alpine
 
 ARG MAVEN_VERSION=3.8.5
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
