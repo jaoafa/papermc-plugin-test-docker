@@ -1,6 +1,6 @@
 # papermc-plugin-test-docker
 
-プラグインの動作テストを行うことを目的としたプロジェクトです。
+プラグインの動作テストを行うサーバを Docker 上で楽に立てるためのプロジェクトです。
 
 ## Containers
 
