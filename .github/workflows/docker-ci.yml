@@ -1,0 +1,22 @@
+name: Docker CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build the Docker image (papermc)
+      run: docker build . --file papermc/Dockerfile --tag papermc:$(date +%s)
+
+    - name: Build the Docker image (log-sender)
+      working-directory: log-sender/
+      run: docker build . --file Dockerfile --tag papermc:$(date +%s)
