@@ -1,9 +1,9 @@
 {
-  "name": "node-jaotan",
-  "version": "1.0.4",
-  "description": "Auxiliary application when Javajaotan does not work",
+  "name": "log-sender",
+  "version": "1.0.0",
+  "description": "",
   "main": "dist/index.js",
-  "repository": "git@github.com:jaoafa/node-jaotan.git",
+  "repository": "git@github.com:jaoafa/papermc-plugin-test-docker.git",
   "author": "Tomachi",
   "private": true,
   "scripts": {
@@ -26,7 +26,7 @@
     "@types/utf8": "3.0.1",
     "@typescript-eslint/eslint-plugin": "5.14.0",
     "@typescript-eslint/parser": "5.14.0",
-    "axios": "^0.26.1",
+    "axios": "0.26.1",
     "config": "3.3.7",
     "discord.js": "13.6.0",
     "eslint": "8.11.0",
