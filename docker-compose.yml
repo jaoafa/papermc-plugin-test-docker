@@ -1,4 +1,5 @@
-version: '3.8'
+version: "3.8"
+
 services:
   papermc:
     build:
@@ -12,6 +13,7 @@ services:
       - "./data/worlds/Jao_Afa:/papermc/Jao_Afa"
       - "./data/worlds/Jao_Afa_nether:/papermc/Jao_Afa_nether"
       - "./data/mvnrepositorys:/papermc/mvnrepositorys"
+
   log-sender:
     build: log-sender/
     links:
