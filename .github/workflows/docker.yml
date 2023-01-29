@@ -1,0 +1,42 @@
+# 任意のレジストリに Docker image を公開orビルドする。
+# プルリクの作成・更新時に動作する。
+
+name: Docker
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - synchronize
+    paths:
+      - .github/workflows/docker.yml
+  pull_request_target:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.merged == true && 'master' || github.event.pull_request.head.sha }}
+
+jobs:
+  docker-ci:
+    name: Docker CI
+    uses: book000/templates/.github/workflows/reusable-docker.yml@master
+    with:
+      targets: >-
+        [
+          { imageName: "jaoafa/papermc-plugin-test-docker", context: "papermc", file: "papermc/Dockerfile", packageName: "papermc-plugin-test-docker" },
+          { imageName: "jaoafa/papermc-plugin-test-docker-log-sender", context: "log-sender", file: "log-sender/Dockerfile", packageName: "papermc-plugin-test-docker-log-sender" }
+        ]
+      platforms: linux/amd64
+    secrets:
+      DOCKER_USERNAME: ${{ github.actor }}
+      DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
