@@ -1,6 +1,6 @@
 FROM openjdk:19-alpine
 
-ARG MAVEN_VERSION=3.8.6
+ARG MAVEN_VERSION=3.8.7
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 ENV MC_VERSION="1.18.2" \
@@ -16,11 +16,11 @@ RUN apk add --no-cache wget curl jq git && \
     ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
 WORKDIR /papermc
-COPY papermc/entrypoint.sh .
+COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
-COPY data/bukkit.yml .
-COPY data/ops.json .
-COPY data/server.properties .
+COPY bukkit.yml .
+COPY ops.json .
+COPY server.properties .
 
 CMD ["sh", "/papermc/entrypoint.sh"]
