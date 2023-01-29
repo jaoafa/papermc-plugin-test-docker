@@ -1,6 +1,6 @@
 FROM openjdk:19-alpine
 
-ARG MAVEN_VERSION=3.8.6
+ARG MAVEN_VERSION=3.8.7
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 ENV MC_VERSION="1.18.2" \
