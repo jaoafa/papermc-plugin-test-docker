@@ -5,3 +5,4 @@ dist.tgz
 config/*
 !config/.gitkeep
 yarn-error.log
+output/

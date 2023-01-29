@@ -19,8 +19,8 @@ WORKDIR /papermc
 COPY papermc/entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
-COPY data/bukkit.yml .
-COPY data/ops.json .
-COPY data/server.properties .
+COPY bukkit.yml .
+COPY ops.json .
+COPY server.properties .
 
 CMD ["sh", "/papermc/entrypoint.sh"]

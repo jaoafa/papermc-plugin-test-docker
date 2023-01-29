@@ -1,0 +1,62 @@
+[
+    {
+        "uuid": "0ad34a33-3ca4-4c86-84f3-a4591920b06a",
+        "name": "MinHero_exp",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "0bdc0219-f3c3-4d73-a4df-1d8bd088f419",
+        "name": "X5Z",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "7008531a-539b-4dfc-8b81-7b267d18dd0a",
+        "name": "X9Z",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "32ff7cdc-a1b4-450a-aa7e-6af75fe8c37c",
+        "name": "mine_book000",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "39cf878b-ef0b-44fc-a2c6-de3d540a4728",
+        "name": "Hirotaisou2012",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "5799296a-d1ec-4252-93bd-440bb9caa65c",
+        "name": "X4Z",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "13976d72-1389-4332-818e-9cecad363b12",
+        "name": "yuuaHP",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "74a7b99e-d69c-4ae9-9d81-7596b11c18ad",
+        "name": "Samechan_",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "22ab15d6-2e88-4fdd-91c0-e459f0f804f8",
+        "name": "Ekusas83",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    },
+    {
+        "uuid": "26728d53-add7-46d1-97c3-0a25bc6607f5",
+        "name": "kohonayoshi",
+        "level": 4,
+        "bypassesPlayerLimit": false
+    }
+]
