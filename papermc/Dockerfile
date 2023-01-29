@@ -16,7 +16,7 @@ RUN apk add --no-cache wget curl jq git && \
     ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
 WORKDIR /papermc
-COPY papermc/entrypoint.sh .
+COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
 COPY bukkit.yml .
